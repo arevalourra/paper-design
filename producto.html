@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F6D3E1">
+  <meta name="description" content="Personaliza tus productos Paper Design, elige opciones y prepara una cotización.">
+  <title>Producto | Paper Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="producto">
+  <a class="skip-link" href="#principal">Ir al contenido principal</a>
+  <header class="site-header" id="cabecera">
+    <div class="header-content">
+      <a class="brand" href="index.html#portada" aria-label="Paper Design, inicio"><img src="assets/marca/logo-paper-design.png" alt="Paper Design"></a>
+      <div class="header-tabs" aria-hidden="true"><span class="header-tab pink"></span><span class="header-tab yellow"></span><span class="header-tab blue"></span></div>
+      <nav class="header-links" aria-label="Navegación principal">
+        <a href="index.html#portada">Inicio</a><a href="catalogo.html">Catálogo</a><a href="index.html#empresas">Empresas</a><a href="index.html#historia">Historia</a><a href="index.html#como-comprar">Cómo comprar</a>
+      </nav>
+      <div class="header-icons">
+        <button class="icon-control" type="button" id="search-open" aria-label="Buscar productos" title="Buscar productos"><img src="assets/iconos/lupa.png" alt=""></button>
+        <button class="icon-control bag-control" type="button" id="quote-open" aria-label="Ver cotización" title="Ver cotización"><img src="assets/iconos/compras.png" alt=""><span id="cart-count" class="cart-count" hidden>0</span></button>
+        <button class="icon-control" type="button" id="menu-open" aria-label="Abrir menú" aria-expanded="false" title="Menú"><img src="assets/iconos/hamburguesa.png" alt=""></button>
+      </div>
+    </div>
+    <nav class="menu-panel" id="menu-panel" aria-label="Menú desplegable" hidden>
+      <a href="index.html#portada">Inicio</a><a href="catalogo.html">Catálogo</a><a href="index.html#empresas">Empresas</a><a href="index.html#historia">Historia</a><a href="index.html#como-comprar">Cómo comprar</a>
+    </nav>
+  </header>
+
+  <main id="principal">
+    <div class="page-view" id="page-product" data-view="producto">
+      <section class="product-detail container">
+        <div class="detail-layout">
+          <div class="detail-image-frame"><img id="detail-image" src="assets/productos/10.png" alt="Adhesivos personalizados"></div>
+          <div class="detail-info"><h1 id="detail-title">Adhesivos Personalizados</h1><p id="detail-description" class="detail-description"></p><div id="detail-options" class="detail-options"></div><div class="detail-purchase"><div><span>Precio estimado</span><strong id="detail-price">$4.000</strong></div><button class="button solid-yellow" type="button" id="detail-add">Añadir a cotización</button></div><small id="detail-helper">Valor estimado del conjunto seleccionado.</small></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="contact-section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-text"><p class="kicker"><span class="asterisk-inline">✱</span> INFORMACIÓN IMPORTANTE</p><h2>¿Tienes una idea?<br><span>¡Hablemos!</span></h2><p>Déjanos los detalles de tu proyecto. Preparamos un mensaje listo para enviar y te ayudamos a darle vida.</p>
+          <div class="contact-details">
+            <a href="https://www.instagram.com/paperdesign._/" target="_blank" rel="noopener noreferrer"><span class="contact-icon blue"><img src="assets/iconos/instagram.png" alt=""></span><span><strong>Síguenos en Instagram</strong><small>@paperdesign._</small></span></a>
+            <div><span class="contact-icon yellow"><img src="assets/iconos/ubicacion.png" alt=""></span><span><strong>Entregas coordinadas</strong><small>Requínoa - Rancagua - Graneros - Santiago</small></span></div>
+            <a href="https://wa.me/56984417242" target="_blank" rel="noopener noreferrer"><span class="contact-icon blue"><img src="assets/iconos/whatsapp.png" alt=""></span><span><strong>Pedidos por WhatsApp</strong><small>+56 9 8441 7242</small></span></a>
+            <a href="mailto:archivos.paperdesign@gmail.com"><span class="contact-icon yellow"><img src="assets/iconos/gmail.png" alt=""></span><span><strong>Envío de diseños y fotografías</strong><small>archivos.paperdesign@gmail.com</small></span></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <h3>¡Cotiza tu idea!</h3><p>Cuéntanos qué necesitas y te ayudaremos con los detalles.</p>
+          <label for="contact-name" class="sr-only">Tu nombre</label><input id="contact-name" type="text" autocomplete="name" name="nombre" required placeholder="Tu Nombre">
+          <div class="form-row"><label class="sr-only" for="contact-email">Correo electrónico</label><input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="Correo electrónico"><label class="sr-only" for="contact-phone">Teléfono</label><input id="contact-phone" name="telefono" type="tel" autocomplete="tel" placeholder="Teléfono"></div>
+          <label for="contact-message" class="sr-only">Cuéntanos tu idea</label><textarea id="contact-message" name="mensaje" rows="5" required placeholder="Cuéntanos tu idea, productos, cantidades y fechas..."></textarea>
+          <button class="button solid-yellow" type="submit">Enviar mi cotización <img src="assets/iconos/flecha.png" alt=""></button>
+          <p class="form-note">Se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid"><div class="footer-brand"><a href="index.html#portada" aria-label="Paper Design, inicio"><img src="assets/marca/logo-paper-design.png" alt="Paper Design"></a><p>Ideas que se convierten en detalles.<br>Papelería creativa y productos<br>personalizados desde 2020.</p></div><nav class="footer-col" aria-label="Enlaces"><a href="index.html#portada">Inicio</a><a href="catalogo.html">Catálogo</a><a href="index.html#historia">Historia</a><a href="index.html#empresas">Empresas</a><a href="index.html#como-comprar">Cómo comprar</a></nav><div class="footer-col"><span>Región de O'Higgins, Chile</span><span>Requínoa - Rancagua - Graneros</span><a href="https://www.instagram.com/paperdesign._/" target="_blank" rel="noopener noreferrer">Instagram: @paperdesign._</a><a href="https://wa.me/56984417242" target="_blank" rel="noopener noreferrer">WhatsApp: +56 9 8441 7242</a><a href="mailto:archivos.paperdesign@gmail.com">Correo: archivos.paperdesign@gmail.com</a></div></div>
+    <div class="container footer-bottom"><span>© 2026 Paper Design. Todos los derechos reservados.</span><span>Diseñado para ideas únicas</span></div>
+  </footer>
+
+  <div class="overlay" id="search-modal" hidden><div class="overlay-bg" data-close="search"></div><section class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title"><div class="dialog-heading"><h2 id="search-title">Buscar productos</h2><button type="button" class="close-control" data-close="search" aria-label="Cerrar">×</button></div><input type="search" id="search-input" placeholder="¿Qué estás buscando?" aria-label="Buscar productos"><div id="search-results" class="search-results"></div></section></div>
+  <div class="overlay" id="quote-modal" hidden><div class="overlay-bg" data-close="quote"></div><aside class="quote-dialog" role="dialog" aria-modal="true" aria-labelledby="quote-title"><div class="dialog-heading"><h2 id="quote-title">Mi cotización</h2><button type="button" class="close-control" data-close="quote" aria-label="Cerrar">×</button></div><div id="quote-items" class="quote-items"></div><div class="quote-summary"><div class="quote-total"><span>Total estimado</span><strong id="quote-total">$0</strong></div><label for="quote-notes">Indicaciones especiales</label><textarea id="quote-notes" rows="3" placeholder="Colores, diseños, fecha..."></textarea><button class="button solid-yellow" type="button" id="quote-send">Enviar cotización por WhatsApp</button></div></aside></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
